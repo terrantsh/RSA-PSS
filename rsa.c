@@ -3,10 +3,7 @@
 //
 
 #include "rsa.h"
-#include "error.h"
-#include "integer.h"
-#include "wolfmath.h"
-#include "misc.h"
+
 
 int wc_RsaEncryptSize(RsaKey* key)
 {
@@ -232,14 +229,14 @@ static int RsaMGF1(enum wc_HashType hType, byte* seed, word32 seedSz,
     }
     /* if tmp is not large enough than use some dynamic memory */
     if ((seedSz + 4) > sizeof(tmpA) || (word32)hLen > sizeof(tmpA)) {
-        /* find largest amount of memory needed which will be the max of
-         * hLen and (seedSz + 4) since tmp is used to store the hash digest */
-        tmpSz = ((seedSz + 4) > (word32)hLen)? seedSz + 4: (word32)hLen;
-        tmp = (byte*)XMALLOC(tmpSz, heap, DYNAMIC_TYPE_RSA_BUFFER);
-        if (tmp == NULL) {
-            return MEMORY_E;
-        }
-        tmpF = 1; /* make sure to free memory when done */
+//        /* find largest amount of memory needed which will be the max of
+//         * hLen and (seedSz + 4) since tmp is used to store the hash digest */
+//        tmpSz = ((seedSz + 4) > (word32)hLen)? seedSz + 4: (word32)hLen;
+//        tmp = (byte*)XMALLOC(tmpSz, heap, DYNAMIC_TYPE_RSA_BUFFER);
+//        if (tmp == NULL) {
+//            return MEMORY_E;
+//        }
+//        tmpF = 1; /* make sure to free memory when done */
     }
     else {
         /* use array on the stack */
@@ -307,7 +304,7 @@ static int RsaUnPad_PSS(byte *pkcsBlock, unsigned int pkcsBlockLen,
                         int saltLen, int bits, void* heap)
 {
     int   ret;
-    byte* tmp;
+    byte tmp[270];
     int   hLen, i;
 
     hLen = wc_HashGetDigestSize(hType);
@@ -326,9 +323,9 @@ static int RsaUnPad_PSS(byte *pkcsBlock, unsigned int pkcsBlockLen,
         return BAD_PADDING_E;
     }
 
-    tmp = (byte*)XMALLOC(pkcsBlockLen, heap, DYNAMIC_TYPE_RSA_BUFFER);
-    if (tmp == NULL)
-        return MEMORY_E;
+//    tmp = (byte*)XMALLOC(pkcsBlockLen, heap, DYNAMIC_TYPE_RSA_BUFFER);
+//    if (tmp == NULL)
+//        return MEMORY_E;
 
     if ((ret = RsaMGF(mgf, pkcsBlock + pkcsBlockLen - 1 - hLen, hLen,
                       tmp, pkcsBlockLen - 1 - hLen, heap)) != 0) {
@@ -358,7 +355,7 @@ static int wc_RsaUnPad_ex(byte* pkcsBlock, word32 pkcsBlockLen, byte** out, byte
 #ifdef WC_RSA_PSS
         case WC_RSA_PSS_PAD:
             ret = RsaUnPad_PSS((byte*)pkcsBlock, pkcsBlockLen, out, hType, mgf,
-                                                           saltLen, bits, heap);
+                               saltLen, bits, heap);
             break;
 #endif
         default:
@@ -413,8 +410,8 @@ static int  RsaPrivateDecryptEx(byte* in, word32 inLen, byte* out,
         {
             byte* pad = NULL;
             ret = wc_RsaUnPad_ex(out, key->dataLen, &pad, pad_value, pad_type, hash,
-                             mgf, label, labelSz, saltLen,
-                             mp_count_bits(&key->n), key->heap);
+                                 mgf, label, labelSz, saltLen,
+                                 mp_count_bits(&key->n), key->heap);
 
             if (rsa_type == RSA_PUBLIC_DECRYPT && ret > (int)outLen)
                 ret = RSA_BUFFER_E;

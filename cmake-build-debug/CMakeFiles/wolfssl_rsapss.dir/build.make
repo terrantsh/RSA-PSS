@@ -82,22 +82,9 @@ CMakeFiles/wolfssl_rsapss.dir/rsa.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wolfssl_rsapss.dir/rsa.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator\CLionProjects\wolfssl_rsapss\rsa.c -o CMakeFiles\wolfssl_rsapss.dir\rsa.c.s
 
-CMakeFiles/wolfssl_rsapss.dir/integer.c.obj: CMakeFiles/wolfssl_rsapss.dir/flags.make
-CMakeFiles/wolfssl_rsapss.dir/integer.c.obj: ../integer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/wolfssl_rsapss.dir/integer.c.obj"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\wolfssl_rsapss.dir\integer.c.obj   -c C:\Users\Administrator\CLionProjects\wolfssl_rsapss\integer.c
-
-CMakeFiles/wolfssl_rsapss.dir/integer.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wolfssl_rsapss.dir/integer.c.i"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator\CLionProjects\wolfssl_rsapss\integer.c > CMakeFiles\wolfssl_rsapss.dir\integer.c.i
-
-CMakeFiles/wolfssl_rsapss.dir/integer.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wolfssl_rsapss.dir/integer.c.s"
-	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator\CLionProjects\wolfssl_rsapss\integer.c -o CMakeFiles\wolfssl_rsapss.dir\integer.c.s
-
 CMakeFiles/wolfssl_rsapss.dir/memory.c.obj: CMakeFiles/wolfssl_rsapss.dir/flags.make
 CMakeFiles/wolfssl_rsapss.dir/memory.c.obj: ../memory.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/wolfssl_rsapss.dir/memory.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/wolfssl_rsapss.dir/memory.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\wolfssl_rsapss.dir\memory.c.obj   -c C:\Users\Administrator\CLionProjects\wolfssl_rsapss\memory.c
 
 CMakeFiles/wolfssl_rsapss.dir/memory.c.i: cmake_force
@@ -110,7 +97,7 @@ CMakeFiles/wolfssl_rsapss.dir/memory.c.s: cmake_force
 
 CMakeFiles/wolfssl_rsapss.dir/random.c.obj: CMakeFiles/wolfssl_rsapss.dir/flags.make
 CMakeFiles/wolfssl_rsapss.dir/random.c.obj: ../random.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/wolfssl_rsapss.dir/random.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/wolfssl_rsapss.dir/random.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\wolfssl_rsapss.dir\random.c.obj   -c C:\Users\Administrator\CLionProjects\wolfssl_rsapss\random.c
 
 CMakeFiles/wolfssl_rsapss.dir/random.c.i: cmake_force
@@ -123,7 +110,7 @@ CMakeFiles/wolfssl_rsapss.dir/random.c.s: cmake_force
 
 CMakeFiles/wolfssl_rsapss.dir/sha256.c.obj: CMakeFiles/wolfssl_rsapss.dir/flags.make
 CMakeFiles/wolfssl_rsapss.dir/sha256.c.obj: ../sha256.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/wolfssl_rsapss.dir/sha256.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/wolfssl_rsapss.dir/sha256.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\wolfssl_rsapss.dir\sha256.c.obj   -c C:\Users\Administrator\CLionProjects\wolfssl_rsapss\sha256.c
 
 CMakeFiles/wolfssl_rsapss.dir/sha256.c.i: cmake_force
@@ -136,7 +123,7 @@ CMakeFiles/wolfssl_rsapss.dir/sha256.c.s: cmake_force
 
 CMakeFiles/wolfssl_rsapss.dir/misc.c.obj: CMakeFiles/wolfssl_rsapss.dir/flags.make
 CMakeFiles/wolfssl_rsapss.dir/misc.c.obj: ../misc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/wolfssl_rsapss.dir/misc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/wolfssl_rsapss.dir/misc.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\wolfssl_rsapss.dir\misc.c.obj   -c C:\Users\Administrator\CLionProjects\wolfssl_rsapss\misc.c
 
 CMakeFiles/wolfssl_rsapss.dir/misc.c.i: cmake_force
@@ -149,7 +136,7 @@ CMakeFiles/wolfssl_rsapss.dir/misc.c.s: cmake_force
 
 CMakeFiles/wolfssl_rsapss.dir/hash.c.obj: CMakeFiles/wolfssl_rsapss.dir/flags.make
 CMakeFiles/wolfssl_rsapss.dir/hash.c.obj: ../hash.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/wolfssl_rsapss.dir/hash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/wolfssl_rsapss.dir/hash.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\wolfssl_rsapss.dir\hash.c.obj   -c C:\Users\Administrator\CLionProjects\wolfssl_rsapss\hash.c
 
 CMakeFiles/wolfssl_rsapss.dir/hash.c.i: cmake_force
@@ -162,7 +149,7 @@ CMakeFiles/wolfssl_rsapss.dir/hash.c.s: cmake_force
 
 CMakeFiles/wolfssl_rsapss.dir/wolfmath.c.obj: CMakeFiles/wolfssl_rsapss.dir/flags.make
 CMakeFiles/wolfssl_rsapss.dir/wolfmath.c.obj: ../wolfmath.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/wolfssl_rsapss.dir/wolfmath.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/wolfssl_rsapss.dir/wolfmath.c.obj"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\wolfssl_rsapss.dir\wolfmath.c.obj   -c C:\Users\Administrator\CLionProjects\wolfssl_rsapss\wolfmath.c
 
 CMakeFiles/wolfssl_rsapss.dir/wolfmath.c.i: cmake_force
@@ -173,35 +160,78 @@ CMakeFiles/wolfssl_rsapss.dir/wolfmath.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wolfssl_rsapss.dir/wolfmath.c.s"
 	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator\CLionProjects\wolfssl_rsapss\wolfmath.c -o CMakeFiles\wolfssl_rsapss.dir\wolfmath.c.s
 
+CMakeFiles/wolfssl_rsapss.dir/port.c.obj: CMakeFiles/wolfssl_rsapss.dir/flags.make
+CMakeFiles/wolfssl_rsapss.dir/port.c.obj: ../port.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/wolfssl_rsapss.dir/port.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\wolfssl_rsapss.dir\port.c.obj   -c C:\Users\Administrator\CLionProjects\wolfssl_rsapss\port.c
+
+CMakeFiles/wolfssl_rsapss.dir/port.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wolfssl_rsapss.dir/port.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator\CLionProjects\wolfssl_rsapss\port.c > CMakeFiles\wolfssl_rsapss.dir\port.c.i
+
+CMakeFiles/wolfssl_rsapss.dir/port.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wolfssl_rsapss.dir/port.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator\CLionProjects\wolfssl_rsapss\port.c -o CMakeFiles\wolfssl_rsapss.dir\port.c.s
+
+CMakeFiles/wolfssl_rsapss.dir/Tfm.c.obj: CMakeFiles/wolfssl_rsapss.dir/flags.make
+CMakeFiles/wolfssl_rsapss.dir/Tfm.c.obj: ../Tfm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/wolfssl_rsapss.dir/Tfm.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\wolfssl_rsapss.dir\Tfm.c.obj   -c C:\Users\Administrator\CLionProjects\wolfssl_rsapss\Tfm.c
+
+CMakeFiles/wolfssl_rsapss.dir/Tfm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wolfssl_rsapss.dir/Tfm.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator\CLionProjects\wolfssl_rsapss\Tfm.c > CMakeFiles\wolfssl_rsapss.dir\Tfm.c.i
+
+CMakeFiles/wolfssl_rsapss.dir/Tfm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wolfssl_rsapss.dir/Tfm.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator\CLionProjects\wolfssl_rsapss\Tfm.c -o CMakeFiles\wolfssl_rsapss.dir\Tfm.c.s
+
+CMakeFiles/wolfssl_rsapss.dir/asm.c.obj: CMakeFiles/wolfssl_rsapss.dir/flags.make
+CMakeFiles/wolfssl_rsapss.dir/asm.c.obj: ../asm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/wolfssl_rsapss.dir/asm.c.obj"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\wolfssl_rsapss.dir\asm.c.obj   -c C:\Users\Administrator\CLionProjects\wolfssl_rsapss\asm.c
+
+CMakeFiles/wolfssl_rsapss.dir/asm.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/wolfssl_rsapss.dir/asm.c.i"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Administrator\CLionProjects\wolfssl_rsapss\asm.c > CMakeFiles\wolfssl_rsapss.dir\asm.c.i
+
+CMakeFiles/wolfssl_rsapss.dir/asm.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/wolfssl_rsapss.dir/asm.c.s"
+	C:\MinGW\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Administrator\CLionProjects\wolfssl_rsapss\asm.c -o CMakeFiles\wolfssl_rsapss.dir\asm.c.s
+
 # Object files for target wolfssl_rsapss
 wolfssl_rsapss_OBJECTS = \
 "CMakeFiles/wolfssl_rsapss.dir/main.c.obj" \
 "CMakeFiles/wolfssl_rsapss.dir/rsa.c.obj" \
-"CMakeFiles/wolfssl_rsapss.dir/integer.c.obj" \
 "CMakeFiles/wolfssl_rsapss.dir/memory.c.obj" \
 "CMakeFiles/wolfssl_rsapss.dir/random.c.obj" \
 "CMakeFiles/wolfssl_rsapss.dir/sha256.c.obj" \
 "CMakeFiles/wolfssl_rsapss.dir/misc.c.obj" \
 "CMakeFiles/wolfssl_rsapss.dir/hash.c.obj" \
-"CMakeFiles/wolfssl_rsapss.dir/wolfmath.c.obj"
+"CMakeFiles/wolfssl_rsapss.dir/wolfmath.c.obj" \
+"CMakeFiles/wolfssl_rsapss.dir/port.c.obj" \
+"CMakeFiles/wolfssl_rsapss.dir/Tfm.c.obj" \
+"CMakeFiles/wolfssl_rsapss.dir/asm.c.obj"
 
 # External object files for target wolfssl_rsapss
 wolfssl_rsapss_EXTERNAL_OBJECTS =
 
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/main.c.obj
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/rsa.c.obj
-wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/integer.c.obj
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/memory.c.obj
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/random.c.obj
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/sha256.c.obj
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/misc.c.obj
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/hash.c.obj
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/wolfmath.c.obj
+wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/port.c.obj
+wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/Tfm.c.obj
+wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/asm.c.obj
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/build.make
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/linklibs.rsp
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/objects1.rsp
 wolfssl_rsapss.exe: CMakeFiles/wolfssl_rsapss.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable wolfssl_rsapss.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Administrator\CLionProjects\wolfssl_rsapss\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable wolfssl_rsapss.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\wolfssl_rsapss.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

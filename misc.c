@@ -7,12 +7,14 @@
 
 STATIC WC_INLINE word32 rotlFixed(word32 x, word32 y)
 {
-    return y ? _lrotl(x, y) : x;
+//    return y ? _lrotl(x, y) : x;
+    return 0;
 }
 
 STATIC WC_INLINE word32 rotrFixed(word32 x, word32 y)
 {
-    return y ? _lrotr(x, y) : x;
+//    return y ? _lrotr(x, y) : x;
+    return 0;
 }
 
 WC_INLINE word32 ByteReverseWord32(word32 value)

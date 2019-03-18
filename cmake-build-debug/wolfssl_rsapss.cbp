@@ -74,6 +74,15 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/Tfm.c">
+			<Option target="wolfssl_rsapss"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/Tfm.h">
+			<Option target="wolfssl_rsapss"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/asm.c">
+			<Option target="wolfssl_rsapss"/>
+		</Unit>
 		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/error.h">
 			<Option target="wolfssl_rsapss"/>
 		</Unit>
@@ -81,12 +90,6 @@
 			<Option target="wolfssl_rsapss"/>
 		</Unit>
 		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/hash.h">
-			<Option target="wolfssl_rsapss"/>
-		</Unit>
-		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/integer.c">
-			<Option target="wolfssl_rsapss"/>
-		</Unit>
-		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/integer.h">
 			<Option target="wolfssl_rsapss"/>
 		</Unit>
 		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/main.c">
@@ -102,6 +105,12 @@
 			<Option target="wolfssl_rsapss"/>
 		</Unit>
 		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/misc.h">
+			<Option target="wolfssl_rsapss"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/port.c">
+			<Option target="wolfssl_rsapss"/>
+		</Unit>
+		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/port.h">
 			<Option target="wolfssl_rsapss"/>
 		</Unit>
 		<Unit filename="C:/Users/Administrator/CLionProjects/wolfssl_rsapss/random.c">

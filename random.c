@@ -144,6 +144,7 @@ static int Hash_DRBG_Uninstantiate(DRBG* drbg)
     int    compareSum = 0;
     byte*  compareDrbg = (byte*)drbg;
 
+
     ForceZero(drbg, sizeof(DRBG));
 
     for (i = 0; i < sizeof(DRBG); i++)
@@ -161,6 +162,7 @@ int wc_RNG_HealthTest_ex(int reseed, const byte* nonce, word32 nonceSz,
 {
     int ret = -1;
     DRBG* drbg;
+    DRBG  drbg_var;
 
     if (seedA == NULL || output == NULL) {
         return BAD_FUNC_ARG;
@@ -174,12 +176,14 @@ int wc_RNG_HealthTest_ex(int reseed, const byte* nonce, word32 nonceSz,
         return ret;
     }
 
-#ifdef WOLFSSL_SMALL_STACK
-    drbg = (DRBG*)XMALLOC(sizeof(DRBG), NULL, DYNAMIC_TYPE_RNG);
-    if (drbg == NULL) {
-        return MEMORY_E;
-    }
-#endif
+//#ifdef WOLFSSL_SMALL_STACK
+//    drbg = (DRBG*)XMALLOC(sizeof(DRBG), NULL, DYNAMIC_TYPE_RNG);
+//    if (drbg == NULL) {
+//        return MEMORY_E;
+//    }
+//#endif
+
+    drbg = &drbg_var;
 
     if (Hash_DRBG_Instantiate(drbg, seedA, seedASz, nonce, nonceSz,
                               heap, devId) != 0) {
@@ -287,18 +291,19 @@ STATIC WC_INLINE int ConstantCompare(const byte* a, const byte* b, int length)
 STATIC WC_INLINE int wc_RNG_HealthTestLocal(int reseed)
 {
     int ret = 0;
-#ifdef WOLFSSL_SMALL_STACK
-    byte* check;
-#endif
+//#ifdef WOLFSSL_SMALL_STACK
+//    byte* check;
+//#endif
+//
+//#ifdef WOLFSSL_SMALL_STACK
+//    check = (byte*)XMALLOC(RNG_HEALTH_TEST_CHECK_SIZE, NULL,
+//                           DYNAMIC_TYPE_TMP_BUFFER);
+//    if (check == NULL) {
+//        return MEMORY_E;
+//    }
+//#endif
 
-#ifdef WOLFSSL_SMALL_STACK
-    check = (byte*)XMALLOC(RNG_HEALTH_TEST_CHECK_SIZE, NULL,
-                           DYNAMIC_TYPE_TMP_BUFFER);
-    if (check == NULL) {
-        return MEMORY_E;
-    }
-#endif
-
+    byte  check[RNG_HEALTH_TEST_CHECK_SIZE];
     if (reseed) {
         ret = wc_RNG_HealthTest(1, seedA, sizeof(seedA), reseedSeedA, sizeof(reseedSeedA), check, RNG_HEALTH_TEST_CHECK_SIZE);
         if (ret == 0) {
@@ -327,10 +332,12 @@ STATIC WC_INLINE int wc_RNG_HealthTestLocal(int reseed)
     return ret;
 }
 
+extern byte randseed;
+
 // rand generator
 int wc_GenerateSeed(OS_Seed* os, byte* output, word32 sz)
 {
-    srand((unsigned)time(NULL));
+//    srand(randseed);
 //    os->handle = rand();
     for (int i=0; i<sz; i++)
         output[i] = rand() & 0xFF;
@@ -488,7 +495,7 @@ int Hash_DRBG_Generate(DRBG* drbg, byte* out, word32 outSz)
                 array_add(drbg->V, sizeof(drbg->V), digest, WC_SHA256_DIGEST_SIZE);
                 array_add(drbg->V, sizeof(drbg->V), drbg->C, sizeof(drbg->C));
 #ifdef LITTLE_ENDIAN_ORDER
-                reseedCtr = ByteReverseWord32(reseedCtr);
+//                reseedCtr = ByteReverseWord32(reseedCtr);
 #endif
                 array_add(drbg->V, sizeof(drbg->V),
                           (byte*)&reseedCtr, sizeof(reseedCtr));
@@ -511,6 +518,7 @@ static int _InitRng(WC_RNG* rng, byte* nonce, word32 nonceSz, void* heap, int de
 
     (void)nonce;
     (void)nonceSz;
+    int rngdrbg[30] = {0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd,0xcdcdcdcd};
 
     if (rng == NULL)
         return BAD_FUNC_ARG;
@@ -534,7 +542,8 @@ static int _InitRng(WC_RNG* rng, byte* nonce, word32 nonceSz, void* heap, int de
 
     if (wc_RNG_HealthTestLocal(0) == 0) {
         byte seed[MAX_SEED_SZ];
-        rng->drbg = (struct DRBG*)XMALLOC(sizeof(DRBG), rng->heap, DYNAMIC_TYPE_RNG);
+        rng->drbg = rngdrbg;
+//        rng->drbg = (struct DRBG*)XMALLOC(sizeof(DRBG), rng->heap, DYNAMIC_TYPE_RNG);
         if (rng->drbg == NULL) {
             ret = MEMORY_E;
         }
@@ -546,9 +555,9 @@ static int _InitRng(WC_RNG* rng, byte* nonce, word32 nonceSz, void* heap, int de
                 ret = wc_RNG_TestSeed(seed, seedSz);
 
             if (ret == DRBG_SUCCESS)
-                 ret = Hash_DRBG_Instantiate(rng->drbg,
-                            seed + SEED_BLOCK_SZ, seedSz - SEED_BLOCK_SZ,
-                            nonce, nonceSz, rng->heap, devId);
+                ret = Hash_DRBG_Instantiate(rng->drbg,
+                                            seed + SEED_BLOCK_SZ, seedSz - SEED_BLOCK_SZ,
+                                            nonce, nonceSz, rng->heap, devId);
 
             if (ret == DRBG_SUCCESS)
                 ret = Hash_DRBG_Generate(rng->drbg, NULL, 0);

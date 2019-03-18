@@ -7,8 +7,10 @@
 
 #include "types.h"
 #include "error.h"
-#include "integer.h"
+//#include "Tfm.h"
 #include "random.h"
+#include "rsa.h"
+
 
 int get_digit_count(mp_int* a);
 int mp_rand(mp_int* a, int digits, WC_RNG* rng);

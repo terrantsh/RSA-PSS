@@ -122,6 +122,60 @@ wolfssl_rsapss/fast:
 	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/build
 .PHONY : wolfssl_rsapss/fast
 
+Tfm.obj: Tfm.c.obj
+
+.PHONY : Tfm.obj
+
+# target to build an object file
+Tfm.c.obj:
+	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/Tfm.c.obj
+.PHONY : Tfm.c.obj
+
+Tfm.i: Tfm.c.i
+
+.PHONY : Tfm.i
+
+# target to preprocess a source file
+Tfm.c.i:
+	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/Tfm.c.i
+.PHONY : Tfm.c.i
+
+Tfm.s: Tfm.c.s
+
+.PHONY : Tfm.s
+
+# target to generate assembly for a file
+Tfm.c.s:
+	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/Tfm.c.s
+.PHONY : Tfm.c.s
+
+asm.obj: asm.c.obj
+
+.PHONY : asm.obj
+
+# target to build an object file
+asm.c.obj:
+	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/asm.c.obj
+.PHONY : asm.c.obj
+
+asm.i: asm.c.i
+
+.PHONY : asm.i
+
+# target to preprocess a source file
+asm.c.i:
+	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/asm.c.i
+.PHONY : asm.c.i
+
+asm.s: asm.c.s
+
+.PHONY : asm.s
+
+# target to generate assembly for a file
+asm.c.s:
+	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/asm.c.s
+.PHONY : asm.c.s
+
 hash.obj: hash.c.obj
 
 .PHONY : hash.obj
@@ -148,33 +202,6 @@ hash.s: hash.c.s
 hash.c.s:
 	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/hash.c.s
 .PHONY : hash.c.s
-
-integer.obj: integer.c.obj
-
-.PHONY : integer.obj
-
-# target to build an object file
-integer.c.obj:
-	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/integer.c.obj
-.PHONY : integer.c.obj
-
-integer.i: integer.c.i
-
-.PHONY : integer.i
-
-# target to preprocess a source file
-integer.c.i:
-	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/integer.c.i
-.PHONY : integer.c.i
-
-integer.s: integer.c.s
-
-.PHONY : integer.s
-
-# target to generate assembly for a file
-integer.c.s:
-	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/integer.c.s
-.PHONY : integer.c.s
 
 main.obj: main.c.obj
 
@@ -256,6 +283,33 @@ misc.s: misc.c.s
 misc.c.s:
 	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/misc.c.s
 .PHONY : misc.c.s
+
+port.obj: port.c.obj
+
+.PHONY : port.obj
+
+# target to build an object file
+port.c.obj:
+	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/port.c.obj
+.PHONY : port.c.obj
+
+port.i: port.c.i
+
+.PHONY : port.i
+
+# target to preprocess a source file
+port.c.i:
+	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/port.c.i
+.PHONY : port.c.i
+
+port.s: port.c.s
+
+.PHONY : port.s
+
+# target to generate assembly for a file
+port.c.s:
+	$(MAKE) -f CMakeFiles\wolfssl_rsapss.dir\build.make CMakeFiles/wolfssl_rsapss.dir/port.c.s
+.PHONY : port.c.s
 
 random.obj: random.c.obj
 
@@ -374,12 +428,15 @@ help:
 	@echo ... wolfssl_rsapss
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Tfm.obj
+	@echo ... Tfm.i
+	@echo ... Tfm.s
+	@echo ... asm.obj
+	@echo ... asm.i
+	@echo ... asm.s
 	@echo ... hash.obj
 	@echo ... hash.i
 	@echo ... hash.s
-	@echo ... integer.obj
-	@echo ... integer.i
-	@echo ... integer.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -389,6 +446,9 @@ help:
 	@echo ... misc.obj
 	@echo ... misc.i
 	@echo ... misc.s
+	@echo ... port.obj
+	@echo ... port.i
+	@echo ... port.s
 	@echo ... random.obj
 	@echo ... random.i
 	@echo ... random.s

@@ -25,14 +25,107 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hash.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="24" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sha256.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="479">
+              <caret line="147" column="43" lean-forward="true" selection-end-line="166" />
+              <folding>
+                <element signature="e#48#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/error.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="65">
+              <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tfm.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="57" column="28" selection-end-line="808" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+            <state relative-caret-position="464">
+              <caret line="67" column="12" lean-forward="true" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hash.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#110#128#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="38" lean-forward="true" selection-end-line="57" />
+              <folding>
+                <element signature="e#49#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="566" column="7" selection-start-line="566" selection-start-column="7" selection-end-line="566" selection-end-column="7" />
+              <folding>
+                <element signature="e#48#67#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/misc.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/memory.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="642">
+              <caret line="105" column="20" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -41,66 +134,72 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Digest</find>
-      <find>DRBG_NOT_INIT</find>
-      <find>Hash_DRBG_Reseed</find>
-      <find>Hash_DRBG_Generate</find>
-      <find>wc_RNG_HealthTest_ex</find>
-      <find>wc_RNG_HealthTest</find>
-      <find>min</find>
-      <find>#define SHA256_DIGEST_SIZE WC_SHA256_DIGEST_SIZE</find>
-      <find>WC_SHA256_DIGEST_SIZE</find>
-      <find>#define SHA256_DIGEST_SIZE WC_SHA256_DIGEST_SIZE</find>
-      <find>mp_zero</find>
-      <find>wc_RNG_HealthTestLocal</find>
-      <find>mp_lshd</find>
-      <find>mp_invmod</find>
-      <find>wolfSSL_Malloc</find>
-      <find>fast_s_mp_mul_digs</find>
-      <find>fast_mp_montgomery_reduce</find>
-      <find>mp_montgomery_reduce</find>
-      <find>mp_mul_d</find>
-      <find>mp_mulmod</find>
-      <find>wc_RsaEncryptSize</find>
-      <find>mp_unsigned_bin_size</find>
-      <find>mp_to_unsigned_bin_len</find>
-      <find>mp_sub</find>
-      <find>mp_mul</find>
-      <find>mp_add</find>
-      <find>wc_RsaPSS_CheckPadding_ex</find>
-      <find>wc_HashGetDigestSize</find>
-      <find>mp_count_bits</find>
-      <find>DRBG_SEED_LEN</find>
+      <find>FREE_VAR</find>
+      <find>XREALLOC</find>
+      <find>mp_free</find>
+      <find>XRE</find>
+      <find>XR</find>
+      <find>XFREE</find>
+      <find>#include &quot;hash.h&quot;</find>
+      <find>WOLFSSL_API</find>
+      <find>wolfSSL_init_memory_heap</find>
+      <find>create_memory_buckets</find>
+      <find>wolfSSL_load_static_memory</find>
+      <find>mp_read_unsigned_bin</find>
+      <find>TFM_INTEL_MUL_COMBA</find>
+      <find>integer.h</find>
+      <find>int wc_InitRsaKey(RsaKey* key, void* heap)</find>
+      <find>INVALID_DEVID</find>
+      <find>wc_InitRsaKey_ex</find>
+      <find>tmp = (byte*)XMALLOC(pkcsBlockLen, hea</find>
+      <find>fp_forcezero</find>
+      <find>mp_to_unsigned_bin_at_pos</find>
+      <find>fp_int</find>
+      <find>byte  check[RNG_HEALTH_TEST_CHECK_SIZE];</find>
+      <find>XMALLOC</find>
+      <find>ForceZero</find>
+      <find>fp_zero</find>
+      <find>fp_init</find>
+      <find>typedef</find>
+      <find>typedef fp_int mp_int;</find>
+      <find>get_digit_count</find>
+      <find>mp_int</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/memory.c" />
-        <option value="$PROJECT_DIR$/hash.c" />
-        <option value="$PROJECT_DIR$/misc.c" />
         <option value="$PROJECT_DIR$/error.h" />
-        <option value="$PROJECT_DIR$/hash.h" />
-        <option value="$PROJECT_DIR$/integer.h" />
-        <option value="$PROJECT_DIR$/integer.c" />
-        <option value="$PROJECT_DIR$/memory.h" />
-        <option value="$PROJECT_DIR$/misc.h" />
-        <option value="$PROJECT_DIR$/random.c" />
-        <option value="$PROJECT_DIR$/random.h" />
-        <option value="$PROJECT_DIR$/rsa.c" />
-        <option value="$PROJECT_DIR$/rsa.h" />
         <option value="$PROJECT_DIR$/sha256.c" />
         <option value="$PROJECT_DIR$/sha256.h" />
-        <option value="$PROJECT_DIR$/types.h" />
+        <option value="$PROJECT_DIR$/port.c" />
+        <option value="$PROJECT_DIR$/port.h" />
+        <option value="$PROJECT_DIR$/integer.c" />
+        <option value="$PROJECT_DIR$/asm.c" />
+        <option value="$PROJECT_DIR$/hash.c" />
+        <option value="$PROJECT_DIR$/hash.h" />
+        <option value="$PROJECT_DIR$/random.c" />
+        <option value="$PROJECT_DIR$/memory.c" />
+        <option value="$PROJECT_DIR$/memory.h" />
+        <option value="$PROJECT_DIR$/misc.c" />
+        <option value="$PROJECT_DIR$/misc.h" />
+        <option value="$PROJECT_DIR$/random.h" />
         <option value="$PROJECT_DIR$/wolfmath.c" />
-        <option value="$PROJECT_DIR$/wolfmath.h" />
+        <option value="$PROJECT_DIR$/integer.h" />
         <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/Tfm.c" />
+        <option value="$PROJECT_DIR$/types.h" />
+        <option value="$PROJECT_DIR$/rsa.c" />
+        <option value="$PROJECT_DIR$/rsa.h" />
+        <option value="$PROJECT_DIR$/wolfmath.h" />
+        <option value="$PROJECT_DIR$/Tfm.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -109,7 +208,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,6 +219,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -160,12 +259,18 @@
       <option name="presentableId" value="Default" />
       <updated>1552031332115</updated>
       <workItem from="1552031333407" duration="3141000" />
-      <workItem from="1552267028266" duration="34209000" />
+      <workItem from="1552267028266" duration="41572000" />
+      <workItem from="1552440458840" duration="7643000" />
+      <workItem from="1552462654119" duration="21490000" />
+      <workItem from="1552558188585" duration="4751000" />
+      <workItem from="1552613173366" duration="6892000" />
+      <workItem from="1552631669554" duration="6169000" />
+      <workItem from="1552872052271" duration="12766000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37350000" />
+    <option name="totallyTimeSpent" value="104424000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -181,18 +286,18 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.15724947" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1130064" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32286024" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.4989339" weight="0.32275712" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.50053304" side_tool="true" weight="0.33586133" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="CMake" order="4" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="6" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.3163597" />
+      <window_info anchor="bottom" id="Run" order="8" sideWeight="0.4989339" weight="0.285558" />
+      <window_info anchor="bottom" id="Debug" order="9" sideWeight="0.49946696" visible="true" weight="0.23076923" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" weight="0.32936078" />
@@ -209,12 +314,47 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/error.h</url>
+          <line>147</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/rsa.c</url>
+          <line>234</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/rsa.c</url>
+          <line>230</line>
+          <option name="timeStamp" value="62" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/random.c</url>
-          <line>208</line>
-          <option name="timeStamp" value="9" />
+          <line>545</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/types.h</url>
+          <line>69</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.c</url>
+          <line>51</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/port.c</url>
+          <line>19</line>
+          <option name="timeStamp" value="114" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="a" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -236,140 +376,222 @@
     </entry>
     <entry file="file://C:/MinGW/include/stdlib.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="502" column="39" selection-start-line="502" selection-start-column="39" selection-end-line="502" selection-end-column="39" />
+        <state relative-caret-position="211">
+          <caret line="504" column="38" selection-start-line="504" selection-start-column="38" selection-end-line="504" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/error.h">
+    <entry file="file://$PROJECT_DIR$/integer.c" />
+    <entry file="file://C:/MinGW/include/limits.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="197" column="2" selection-start-line="197" selection-start-column="2" selection-end-line="197" selection-end-column="2" />
+        <state relative-caret-position="376">
+          <caret line="58" selection-start-line="58" selection-end-line="58" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hash.h">
+    <entry file="file://$PROJECT_DIR$/asm.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        <state relative-caret-position="-125">
+          <caret line="89" column="40" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
           <folding>
-            <element signature="e#110#128#0" expanded="true" />
+            <element signature="e#825#844#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hash.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-529">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/integer.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/integer.c">
+    <entry file="file://$PROJECT_DIR$/wolfmath.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5204">
-          <caret line="2651" column="60" selection-start-line="2651" selection-start-column="60" selection-end-line="2651" selection-end-column="60" />
+        <state relative-caret-position="255">
+          <caret line="18" lean-forward="true" selection-end-line="18" />
           <folding>
-            <element signature="e#87405#87468#0" expanded="true" />
+            <element signature="e#175#194#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/memory.c">
+    <entry file="file://$PROJECT_DIR$/wolfmath.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-end-line="65" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/types.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="136" column="23" selection-end-line="223" />
           <folding>
-            <element signature="e#48#67#0" expanded="true" />
+            <element signature="e#111#130#0" expanded="true" />
+            <element signature="e#558#576#0" expanded="true" />
+            <element signature="e#657#675#0" expanded="true" />
+            <element signature="e#766#784#0" expanded="true" />
+            <element signature="e#875#893#0" expanded="true" />
+            <element signature="e#1080#1371#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/memory.h">
+    <entry file="file://$PROJECT_DIR$/Tfm.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="60" selection-end-line="13" selection-end-column="60" />
+        <state relative-caret-position="383">
+          <caret line="2064" column="13" selection-end-line="3490" />
           <folding>
-            <element signature="e#113#131#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/misc.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#49#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/random.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="172" column="46" selection-start-line="172" selection-start-column="20" selection-end-line="172" selection-end-column="46" />
-          <folding>
-            <element signature="e#56#75#0" expanded="true" />
-            <element signature="e#803#834#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/random.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#113#131#0" expanded="true" />
-            <element signature="e#1027#1064#0" expanded="true" />
-            <element signature="e#1576#1602#0" expanded="true" />
-            <element signature="e#1670#1687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#48#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rsa.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-109">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#107#125#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sha256.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
-          <folding>
-            <element signature="e#48#67#0" expanded="true" />
+            <element signature="e#878#895#0" expanded="true" />
+            <element signature="e#997#1053#0" expanded="true" />
+            <element signature="e#5288#5373#0" expanded="true" />
+            <element signature="e#5423#5508#0" expanded="true" />
+            <element signature="e#5559#5644#0" expanded="true" />
+            <element signature="e#5695#5780#0" expanded="true" />
+            <element signature="e#5831#5916#0" expanded="true" />
+            <element signature="e#5967#6052#0" expanded="true" />
+            <element signature="e#6104#6191#0" expanded="true" />
+            <element signature="e#6243#6330#0" expanded="true" />
+            <element signature="e#6387#6478#0" expanded="true" />
+            <element signature="e#6530#6617#0" expanded="true" />
+            <element signature="e#6669#6768#0" expanded="true" />
+            <element signature="e#6820#6919#0" expanded="true" />
+            <element signature="e#6971#7070#0" expanded="true" />
+            <element signature="e#7122#7219#0" expanded="true" />
+            <element signature="e#7272#7371#0" expanded="true" />
+            <element signature="e#10363#10378#0" expanded="true" />
+            <element signature="e#10492#10604#0" expanded="true" />
+            <element signature="e#11975#12004#0" expanded="true" />
+            <element signature="e#12364#12528#0" expanded="true" />
+            <element signature="e#17717#17727#0" expanded="true" />
+            <element signature="e#17783#17891#0" expanded="true" />
+            <element signature="e#18130#18170#0" expanded="true" />
+            <element signature="e#19037#19076#0" expanded="true" />
+            <element signature="e#19249#19444#0" expanded="true" />
+            <element signature="e#19703#19743#0" expanded="true" />
+            <element signature="e#19961#20001#0" expanded="true" />
+            <element signature="e#21596#21636#0" expanded="true" />
+            <element signature="e#21940#21980#0" expanded="true" />
+            <element signature="e#22183#22214#0" expanded="true" />
+            <element signature="e#22391#22564#0" expanded="true" />
+            <element signature="e#24024#24064#0" expanded="true" />
+            <element signature="e#24375#24415#0" expanded="true" />
+            <element signature="e#24598#24608#0" expanded="true" />
+            <element signature="e#24648#24756#0" expanded="true" />
+            <element signature="e#24897#24982#0" expanded="true" />
+            <element signature="e#25222#25232#0" expanded="true" />
+            <element signature="e#25272#25380#0" expanded="true" />
+            <element signature="e#25485#25564#0" expanded="true" />
+            <element signature="e#25647#25687#0" expanded="true" />
+            <element signature="e#25866#25876#0" expanded="true" />
+            <element signature="e#25916#26024#0" expanded="true" />
+            <element signature="e#26129#26208#0" expanded="true" />
+            <element signature="e#26291#26331#0" expanded="true" />
+            <element signature="e#26630#26657#0" expanded="true" />
+            <element signature="e#27140#27364#0" expanded="true" />
+            <element signature="e#28396#28436#0" expanded="true" />
+            <element signature="e#28696#28736#0" expanded="true" />
+            <element signature="e#28897#28937#0" expanded="true" />
+            <element signature="e#30180#30220#0" expanded="true" />
+            <element signature="e#30393#30433#0" expanded="true" />
+            <element signature="e#30935#30975#0" expanded="true" />
+            <element signature="e#31174#31214#0" expanded="true" />
+            <element signature="e#31444#31484#0" expanded="true" />
+            <element signature="e#31663#31703#0" expanded="true" />
+            <element signature="e#32170#32210#0" expanded="true" />
+            <element signature="e#32389#32429#0" expanded="true" />
+            <element signature="e#32769#32809#0" expanded="true" />
+            <element signature="e#33008#33048#0" expanded="true" />
+            <element signature="e#33497#33537#0" expanded="true" />
+            <element signature="e#33903#33915#0" expanded="true" />
+            <element signature="e#33959#34077#0" expanded="true" />
+            <element signature="e#34420#34462#0" expanded="true" />
+            <element signature="e#34504#34518#0" expanded="true" />
+            <element signature="e#35344#35427#0" expanded="true" />
+            <element signature="e#35477#35560#0" expanded="true" />
+            <element signature="e#35611#35694#0" expanded="true" />
+            <element signature="e#35745#35828#0" expanded="true" />
+            <element signature="e#35879#35962#0" expanded="true" />
+            <element signature="e#36013#36096#0" expanded="true" />
+            <element signature="e#36148#36233#0" expanded="true" />
+            <element signature="e#36285#36370#0" expanded="true" />
+            <element signature="e#36409#36498#0" expanded="true" />
+            <element signature="e#36550#36635#0" expanded="true" />
+            <element signature="e#36687#36772#0" expanded="true" />
+            <element signature="e#36824#36909#0" expanded="true" />
+            <element signature="e#36961#37046#0" expanded="true" />
+            <element signature="e#37098#37183#0" expanded="true" />
+            <element signature="e#37236#37321#0" expanded="true" />
+            <element signature="e#37687#37700#0" expanded="true" />
+            <element signature="e#37788#37803#0" expanded="true" />
+            <element signature="e#37843#37955#0" expanded="true" />
+            <element signature="e#39573#39615#0" expanded="true" />
+            <element signature="e#41699#41756#0" expanded="true" />
+            <element signature="e#42804#42816#0" expanded="true" />
+            <element signature="e#43180#43256#0" expanded="true" />
+            <element signature="e#43300#43499#0" expanded="true" />
+            <element signature="e#43940#44060#0" expanded="true" />
+            <element signature="e#44698#44738#0" expanded="true" />
+            <element signature="e#44898#44947#0" expanded="true" />
+            <element signature="e#45538#45599#0" expanded="true" />
+            <element signature="e#45793#46212#0" expanded="true" />
+            <element signature="e#46317#46471#0" expanded="true" />
+            <element signature="e#46922#47052#0" expanded="true" />
+            <element signature="e#47187#47197#0" expanded="true" />
+            <element signature="e#47237#47345#0" expanded="true" />
+            <element signature="e#47478#47518#0" expanded="true" />
+            <element signature="e#47867#48348#0" expanded="true" />
+            <element signature="e#52760#52775#0" expanded="true" />
+            <element signature="e#52815#52927#0" expanded="true" />
+            <element signature="e#53033#53115#0" expanded="true" />
+            <element signature="e#53194#53236#0" expanded="true" />
+            <element signature="e#53496#53514#0" expanded="true" />
+            <element signature="e#53550#53574#0" expanded="true" />
+            <element signature="e#53750#53765#0" expanded="true" />
+            <element signature="e#53974#53989#0" expanded="true" />
+            <element signature="e#54219#54234#0" expanded="true" />
+            <element signature="e#54317#54341#0" expanded="true" />
+            <element signature="e#54479#54503#0" expanded="true" />
+            <element signature="e#55381#55437#0" expanded="true" />
+            <element signature="e#55685#55757#0" expanded="true" />
+            <element signature="e#56176#56233#0" expanded="true" />
+            <element signature="e#56383#56443#0" expanded="true" />
+            <element signature="e#56866#56939#0" expanded="true" />
+            <element signature="e#58445#58958#0" expanded="true" />
+            <element signature="e#60216#60226#0" expanded="true" />
+            <element signature="e#60266#60374#0" expanded="true" />
+            <element signature="e#60512#60601#0" expanded="true" />
+            <element signature="e#60702#60742#0" expanded="true" />
+            <element signature="e#62198#62210#0" expanded="true" />
+            <element signature="e#62859#62965#0" expanded="true" />
+            <element signature="e#63566#63606#0" expanded="true" />
+            <element signature="e#65748#65767#0" expanded="true" />
+            <element signature="e#65807#65951#0" expanded="true" />
+            <element signature="e#66155#66196#0" expanded="true" />
+            <element signature="e#68709#68721#0" expanded="true" />
+            <element signature="e#69292#69398#0" expanded="true" />
+            <element signature="e#69656#69696#0" expanded="true" />
+            <element signature="e#69801#69841#0" expanded="true" />
+            <element signature="e#70898#70946#0" expanded="true" />
+            <element signature="e#71312#71622#0" expanded="true" />
+            <element signature="e#71835#71930#0" expanded="true" />
+            <element signature="e#72111#72210#0" expanded="true" />
+            <element signature="e#72727#72819#0" expanded="true" />
+            <element signature="e#72843#72851#0" expanded="true" />
+            <element signature="e#73103#73374#0" expanded="true" />
+            <element signature="e#77007#77019#0" expanded="true" />
+            <element signature="e#77570#77680#0" expanded="true" />
+            <element signature="e#78018#78058#0" expanded="true" />
+            <element signature="e#78271#78311#0" expanded="true" />
+            <element signature="e#78579#78591#0" expanded="true" />
+            <element signature="e#78870#78980#0" expanded="true" />
+            <element signature="e#79375#79415#0" expanded="true" />
+            <element signature="e#79818#79858#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sha256.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="390">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#113#131#0" expanded="true" />
             <element signature="e#164#183#0" expanded="true" />
@@ -377,46 +599,140 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/types.h">
+    <entry file="file://$PROJECT_DIR$/rsa.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+        <state relative-caret-position="375">
+          <caret line="25" column="15" selection-end-line="78" />
           <folding>
-            <element signature="e#111#130#0" expanded="true" />
+            <element signature="e#107#125#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wolfmath.c">
+    <entry file="file://$PROJECT_DIR$/random.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-274">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        <state relative-caret-position="316">
+          <caret line="54" column="16" lean-forward="true" selection-end-line="81" />
+          <folding>
+            <element signature="e#113#131#0" expanded="true" />
+            <element signature="e#1683#1720#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wolfmath.h">
+    <entry file="file://$PROJECT_DIR$/random.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        <state relative-caret-position="181">
+          <caret line="339" column="22" selection-start-line="339" selection-start-column="22" selection-end-line="339" selection-end-column="22" />
           <folding>
-            <element signature="e#118#136#0" expanded="true" />
+            <element signature="e#56#75#0" expanded="true" />
+            <element signature="e#767#798#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/port.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/port.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rsa.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="242" selection-start-line="242" selection-end-line="242" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/misc.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        <state relative-caret-position="255">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/misc.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="38" lean-forward="true" selection-end-line="57" />
+          <folding>
+            <element signature="e#49#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="105" column="20" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/memory.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="566" column="7" selection-start-line="566" selection-start-column="7" selection-end-line="566" selection-end-column="7" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hash.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#110#128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/error.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tfm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="57" column="28" selection-end-line="808" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="87" column="38" lean-forward="true" selection-start-line="87" selection-start-column="38" selection-end-line="87" selection-end-column="38" />
+        <state relative-caret-position="464">
+          <caret line="67" column="12" lean-forward="true" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hash.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sha256.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="479">
+          <caret line="147" column="43" lean-forward="true" selection-end-line="166" />
+          <folding>
+            <element signature="e#48#67#0" expanded="true" />
           </folding>
         </state>
       </provider>

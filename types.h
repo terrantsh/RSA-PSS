@@ -13,6 +13,38 @@
 #define LITTLE_ENDIAN_ORDER
 #define NO_DEV_RANDOM
 
+#define WOLFSSL_STATIC_MEMORY
+#define USE_FAST_MATH
+#define WOLFSSL_NO_MALLOC
+#define WOLFSSL_DEBUG_MEMORY
+
+#define XTOUPPER(c)     toupper((c))
+
+/* settings detection for compile vs runtime math incompatibilities */
+enum {
+#if !defined(USE_FAST_MATH) && !defined(SIZEOF_LONG) && !defined(SIZEOF_LONG_LONG)
+    CTC_SETTINGS = 0x0
+#elif !defined(USE_FAST_MATH) && defined(SIZEOF_LONG) && (SIZEOF_LONG == 8)
+    CTC_SETTINGS = 0x1
+#elif !defined(USE_FAST_MATH) && defined(SIZEOF_LONG_LONG) && (SIZEOF_LONG_LONG == 8)
+    CTC_SETTINGS = 0x2
+#elif !defined(USE_FAST_MATH) && defined(SIZEOF_LONG_LONG) && (SIZEOF_LONG_LONG == 4)
+    CTC_SETTINGS = 0x4
+#elif defined(USE_FAST_MATH) && !defined(SIZEOF_LONG) && !defined(SIZEOF_LONG_LONG)
+    CTC_SETTINGS = 0x8
+#elif defined(USE_FAST_MATH) && defined(SIZEOF_LONG) && (SIZEOF_LONG == 8)
+    CTC_SETTINGS = 0x10
+#elif defined(USE_FAST_MATH) && defined(SIZEOF_LONG_LONG) && (SIZEOF_LONG_LONG == 8)
+    CTC_SETTINGS = 0x20
+#elif defined(USE_FAST_MATH) && defined(SIZEOF_LONG_LONG) && (SIZEOF_LONG_LONG == 4)
+    CTC_SETTINGS = 0x40
+#else
+    #error "bad math long / long long settings"
+#endif
+};
+//#define HAVE_INTEL_MULX
+
+
 typedef struct              RsaKey RsaKey;
 typedef struct              WC_RNG WC_RNG;
 typedef unsigned int        mp_digit;  /* long could be 64 now, changed TAO */
@@ -20,6 +52,7 @@ typedef unsigned long       ProviderHandle;
 typedef unsigned char       byte;
 typedef unsigned int        word32;
 typedef unsigned short      word16;
+typedef word32 wolfssl_word;
 
 #define INVALID_DEVID    -2
 #define WC_INLINE __inline
@@ -35,7 +68,6 @@ typedef unsigned short      word16;
 #define BN_FAST_S_MP_SQR_C
 #define BN_S_MP_SQR_C
 #define BN_FAST_S_MP_MUL_DIGS_C
-#define WOLFSSL_SMALL_STACK
 #define BN_MP_EXPTMOD_FAST_C
 #define BN_MP_MONTGOMERY_SETUP_C
 #define BN_FAST_MP_MONTGOMERY_REDUCE_C
@@ -50,8 +82,10 @@ typedef unsigned short      word16;
 #define XMEMCPY(d,s,l)    memcpy((d),(s),(l))
 #define XMEMSET(b,c,l)    memset((b),(c),(l))
 #define XMEMCMP(s1,s2,n)  memcmp((s1),(s2),(n))
-#define XMALLOC(s, h, t)  ((void)h, (void)t, wolfSSL_Malloc((s)))
-#define XREALLOC(p, n, h, t) wolfSSL_Realloc((p), (n))
+#define XMALLOC(s, h, t)     wolfSSL_Malloc((s), (h), (t))
+#define XFREE(p, h, t)       {void* xp = (p); if((xp)) wolfSSL_Free((xp), (h), (t));}
+#define XREALLOC(p, n, h, t) wolfSSL_Realloc((p), (n), (h), (t))
+#define XSTRLEN(s1)       strlen((s1))
 
 #define DECLARE_VAR_INIT(VAR_NAME, VAR_TYPE, VAR_SIZE, INIT_VALUE, HEAP) \
             VAR_TYPE* VAR_NAME = (VAR_TYPE*)INIT_VALUE
@@ -78,30 +112,19 @@ enum wc_HashType {
 
     WC_HASH_TYPE_MAX = WC_HASH_TYPE_BLAKE2B
 };
+//
+///* the mp_int structure */
+//typedef struct mp_int {
+//    int used, alloc, sign;
+//    mp_digit *dp;
+//} mp_int;
+//
+///* the mp_int structure */
+//typedef struct mp_int_test {
+//    int used, alloc, sign;
+//    byte dp[4000];
+//} mp_int_test;
 
-/* the mp_int structure */
-typedef struct mp_int {
-    int used, alloc, sign;
-    mp_digit *dp;
-} mp_int;
-
-/* RSA */
-struct RsaKey {
-    mp_int n, e;
-#ifndef WOLFSSL_RSA_PUBLIC_ONLY
-    mp_int d, p, q;
-#if defined(WOLFSSL_KEY_GEN) || defined(OPENSSL_EXTRA) || !defined(RSA_LOW_MEM)
-    mp_int dP, dQ, u;
-#endif
-#endif
-    void* heap;                               /* for user memory overrides */
-    byte* data;                               /* temp buffer for async RSA */
-    int   type;                               /* public or private */
-    int   state;
-    word32 dataLen;
-    WC_RNG* rng;                              /* for PrivateDecrypt blinding */
-    byte   dataIsAlloc;
-};
 
 /* memory allocation types for user hints */
 enum {

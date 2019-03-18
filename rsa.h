@@ -6,9 +6,12 @@
 #define WOLFSSL_RSAPSS_RSA_H
 
 #include "types.h"
-#include "integer.h"
+#include "Tfm.h"
 #include "random.h"
 #include "hash.h"
+#include "error.h"
+#include "wolfmath.h"
+#include "misc.h"
 
 #define WC_MGF1SHA256        1
 #define WC_RSA_PSS_PAD       2
@@ -44,6 +47,24 @@ enum {
     RSA_STATE_DECRYPT_EXPTMOD,
     RSA_STATE_DECRYPT_UNPAD,
     RSA_STATE_DECRYPT_RES,
+};
+
+/* RSA */
+struct RsaKey {
+    mp_int n, e;
+#ifndef WOLFSSL_RSA_PUBLIC_ONLY
+    mp_int d, p, q;
+#if defined(WOLFSSL_KEY_GEN) || defined(OPENSSL_EXTRA) || !defined(RSA_LOW_MEM)
+    mp_int dP, dQ, u;
+#endif
+#endif
+    void* heap;                               /* for user memory overrides */
+    byte* data;                               /* temp buffer for async RSA */
+    int   type;                               /* public or private */
+    int   state;
+    word32 dataLen;
+    WC_RNG* rng;                              /* for PrivateDecrypt blinding */
+    byte   dataIsAlloc;
 };
 
 int wc_RsaEncryptSize(RsaKey* key);
