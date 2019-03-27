@@ -337,11 +337,8 @@ extern byte randseed;
 // rand generator
 int wc_GenerateSeed(OS_Seed* os, byte* output, word32 sz)
 {
-//    srand(randseed);
-//    os->handle = rand();
-    for (int i=0; i<sz; i++)
-        output[i] = rand() & 0xFF;
-    return 0;
+	//you can use your own rand functuons here
+	return 0;
 }
 
 int wc_RNG_TestSeed(const byte* seed, word32 seedSz)
